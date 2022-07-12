@@ -1,0 +1,23 @@
+{
+  "Resources": {
+    "Ec2Instances": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-079b5e5b3971bd10d",
+        "AvailabilityZone": "ap-south-1a",
+        "SubnetId": "subnet-083dea2a1da5662fa",
+        "InstanceType": "t2.micro",
+        "KeyName": "cloudfrm-key",
+        "SecurityGroupIds": [
+          "sg-034fc26ad332f172a"
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "web-server"
+          }
+        ]
+      }
+    }
+  }
+}
